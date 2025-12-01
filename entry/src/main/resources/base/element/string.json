@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "advertising_control",
+      "value": "Advertising Control"
+    },
+    {
+      "name": "startAdv",
+      "value": "Start Adv"
+    },
+    {
+      "name": "stopAdv",
+      "value": "Stop Adv"
+    },
+    {
+      "name": "scanning_control",
+      "value": "Scanning Control"
+    },
+    {
+      "name": "advertiseStatusText",
+      "value": "Advertising Status: Stopped"
+    },
+    {
+      "name": "scanResultText",
+      "value": "Scan Results: Waiting for data..."
+    },
+    {
+      "name": "scanResultTextNotFound",
+      "value": "Scan Results: No devices found yet."
+    },
+    {
+      "name": "scanResultTextScanStopped",
+      "value": "Scan Results: Scan stopped."
+    },
+    {
+      "name": "scanResultTextScanning",
+      "value": "Scan Results: Scanning..."
+    },
+    {
+      "name": "buttonStopScan",
+      "value": "Stop Scan"
+    },
+    {
+      "name": "buttonStartScan",
+      "value": "Start Scan"
+    }
+  ]
+}
