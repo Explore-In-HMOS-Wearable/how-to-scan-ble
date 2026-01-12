@@ -71,12 +71,11 @@ struct Index {
       this.scanResultText = $r('app.string.scanResultTextNotFound');
       return;
     }
-    this.scanResultText = 'Scan Results (Last 5):\n' + this.scanResults.map((res, index) =>
-    `  #${index + 1}: ${res.deviceId.substring(0, 15)}...\n` +
-      `    Name: ${res.localName || 'N/A'}\n` +
-      `    Tx Power: ${res.txPowerLevel} dBm\n` +
-      `    Mfg Data: ${res.manufactureSpecificData || 'N/A'}`
-    ).join('\n---\n');
+    this.scanResultText = `Scan Results (Last 5):
+    ${this.scanResults.map((res, index) => `  #${index + 1}: ${res.deviceId.substring(0, 15)}...
+    Name: ${res.localName || 'N/A'}
+    Tx Power: ${res.txPowerLevel} dBm
+    Mfg Data: ${res.manufactureSpecificData || 'N/A'}`).join('\n---\n')}`;
   }
 
   onReceiveAdvertiseEvent = (data: ble.AdvertisingStateChangeInfo) => {

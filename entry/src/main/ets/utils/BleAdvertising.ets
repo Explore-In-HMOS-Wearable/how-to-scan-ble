@@ -72,7 +72,7 @@ export class BleAdvertisingManager {
       ble.on('advertisingStateChange', this.onReceiveEvent);
       this.advHandle = await ble.startAdvertising(advertisingParams);
     } catch (err) {
-      console.error(TAG, 'errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+      console.error(TAG, `errCode: ${(err as BusinessError).code},  errMessage: ${(err as BusinessError).message}`);
     }
   }
 
@@ -87,7 +87,7 @@ export class BleAdvertisingManager {
       // 3.2 Disable the BLE advertising.
       await ble.disableAdvertising(advertisingDisableParams);
     } catch (err) {
-      console.error(TAG, 'errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+      console.error(TAG, `errCode: ${(err as BusinessError).code},  errMessage: ${(err as BusinessError).message}`);
     }
   }
 
@@ -102,7 +102,7 @@ export class BleAdvertisingManager {
       // 4.2 Enable BLE advertising again.
       await ble.enableAdvertising(advertisingEnableParams);
     } catch (err) {
-      console.error(TAG, 'errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+      console.error(TAG, `errCode: ${(err as BusinessError).code},  errMessage: ${(err as BusinessError).message}`);
     }
   }
 
@@ -112,7 +112,7 @@ export class BleAdvertisingManager {
       await ble.stopAdvertising(this.advHandle);
       ble.off('advertisingStateChange', this.onReceiveEvent);
     } catch (err) {
-      console.error(TAG, 'errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+      console.error(TAG, `errCode: ${(err as BusinessError).code},  errMessage: ${(err as BusinessError).message}`);
     }
   }
 }

@@ -202,7 +202,7 @@ export class BleScanManager {
       // Initiate a scan.
       this.bleScanner.startScan([scanFilter], scanOptions);
     } catch (err) {
-      console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+      console.error(`errCode: ${(err as BusinessError).code} , errMessage: ${(err as BusinessError).message}`);
     }
   }
 
@@ -214,7 +214,7 @@ export class BleScanManager {
       // Stop the scan.
       this.bleScanner.stopScan();
     } catch (err) {
-      console.error('errCode: ' + (err as BusinessError).code + ', errMessage: ' + (err as BusinessError).message);
+      console.error(`errCode: ${(err as BusinessError).code} , errMessage: ${(err as BusinessError).message}`);
     }
   }
 }

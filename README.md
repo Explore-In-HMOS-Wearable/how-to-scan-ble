@@ -1,15 +1,18 @@
 > **Note:** To access all shared projects, get information about environment setup, and view other guides, please visit [Explore-In-HMOS-Wearable Index](https://github.com/Explore-In-HMOS-Wearable/hmos-index).
 
-# Safe Zone
+# How To Scan Ble
 
 The BleScanAdvertise project serves as a foundational Codelab demonstration for implementing Bluetooth Low Energy (BLE) functionality on HarmonyOS wearables.
 
 This simple application showcases the dual capabilities of a BLE device: acting as both a Peripheral (Advertiser) and a Central (Scanner).
-<p align="left">
+
+# Preview
+
+<div align="left">
     <img src="screenshots/ss2.png" width="25%" />
     <img src="screenshots/ss3.png" width="25%" />
     <img src="screenshots/ss1.png" width="25%" />
-</p>
+</div>
 
 
 # Use Cases
@@ -17,7 +20,7 @@ This simple application showcases the dual capabilities of a BLE device: acting 
 - Scanners scan and track.
 - Finder uses RSSI for guidance.
 
-# Technology Stack
+# Tech Stack
 **Languages**: ArkTS, ArkUI  
 **Frameworks**: HarmonyOS SDK 5.1.0  
 **Tools**: DevEco Studio 5.1.0 Beta1
@@ -82,4 +85,4 @@ This simple application showcases the dual capabilities of a BLE device: acting 
 # License
 
 **BleScanAdvertise** is distributed under the terms of the **MIT License**.  
-See the [LICENSE](LICENSE) file for more information.  
+See the [LICENSE](LICENSE) for more information.  
